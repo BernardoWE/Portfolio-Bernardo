@@ -175,3 +175,6 @@ transition: all 0.3s ease;
     outline: ${props => props.primary ? 'none' : `1px solid ${Colors.primary}`};
 }
 `
+export const About = styled.section`
+    min-height: 100vh;
+`
