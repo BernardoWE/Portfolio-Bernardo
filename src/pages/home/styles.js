@@ -91,6 +91,7 @@ background: url(${img}) no-repeat center center;
 background-size: cover;
 min-height: 100vh;
 display: flex;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 
@@ -101,6 +102,7 @@ justify-content: center;
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    min-height: 100vh;
     max-width: 624px;
 .hero-years{
     color: ${Colors.primary};
@@ -135,6 +137,15 @@ p{
     font-size: 1.25rem;
     margin-top: 1rem;
 }
+.hero-cta{
+    /* margin-top: 10em; */
+    position: absolute;
+    bottom: 2rem;
+    color: ${Colors.mutedForeground};
+    font-family: ${fonts.body};
+    font-size: 1.25rem;
+    
+}
 }
 
 
@@ -152,7 +163,8 @@ color: ${props => props.primary ? Colors.primaryForeground : Colors.foreground};
 border: none;
 outline: ${props => props.primary ? 'none' : `1px solid ${Colors.secondary}`};
 padding: 1rem 2rem;
-font-size: 1.25rem;
+/* font-size: 1.25rem; */
+letter-spacing: 2px;
 font-weight: 700;
 border-radius: 0.5rem;
 cursor: pointer;

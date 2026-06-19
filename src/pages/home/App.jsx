@@ -37,7 +37,9 @@ function App() {
             <Button primary>EXPLORAR DISCOGRAFIA</Button>
             <Button>CONHEÇA A LENDA</Button>
           </div>
+          <p className='hero-cta'>role para descobrir</p>
         </div>
+        
       </Hero>
       
 
