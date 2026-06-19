@@ -193,8 +193,9 @@ export const About = styled.section`
     img{
         max-width: 100%;
         height: auto;
-        border-radius: 0.5rem;
+        border-radius: 0.2rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
     
 }
