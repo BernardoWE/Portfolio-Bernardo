@@ -223,6 +223,15 @@ export const About = styled.section`
         letter-spacing: 4px;
         text-transform: uppercase;
     }
+    .about-quote{
+        border-left: 2px solid ${Colors.primary};
 
+        color: ${Colors.foreground};
+        font-family: ${fonts.body};
+        font-style: italic;
+        letter-spacing: 1px;
+        padding-left: 1em;
+        margin-top: 2em;
+    }
 }
 `

@@ -64,7 +64,7 @@ function App() {
               </p>
             </div>
 
-            <blockquote>
+            <blockquote className='about-quote'>
               “A música tem sido minha terapia, minha melhor amiga e a forma mais pura de me expressar.”
             </blockquote>
           </div>
