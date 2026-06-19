@@ -71,7 +71,7 @@ nav div a{
 }
 nav ul{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     list-style: none;
     
 }
@@ -161,12 +161,12 @@ export const Button = styled.button`
 background-color: ${props => props.primary ? Colors.primary : 'transparent'};
 color: ${props => props.primary ? Colors.primaryForeground : Colors.foreground};
 border: none;
-outline: ${props => props.primary ? 'none' : `1px solid ${Colors.secondary}`};
+outline: ${props => props.primary ? 'none' : `1px solid ${Colors.mutedForeground}`};
 padding: 1rem 2rem;
 /* font-size: 1.25rem; */
 letter-spacing: 2px;
 font-weight: 700;
-border-radius: 0.5rem;
+border-radius: 0.3rem;
 cursor: pointer;
 transition: all 0.3s ease;
 &:hover{

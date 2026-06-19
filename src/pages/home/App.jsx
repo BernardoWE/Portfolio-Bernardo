@@ -34,8 +34,10 @@ function App() {
             <p>O Rei do Pop. O artista que transformou cada palco em um templo, <br />cada passo em história e cada canção em eternidade.</p>
           </div>
           <div className='container-buttons'>
-            <Button primary>EXPLORAR DISCOGRAFIA</Button>
-            <Button>CONHEÇA A LENDA</Button>
+            <a href="#discography">
+            <Button primary>EXPLORAR DISCOGRAFIA</Button></a>
+            <a href="#legacy">
+            <Button>CONHEÇA A LENDA</Button></a>
           </div>
           <p className='hero-cta'>role para descobrir</p>
         </div>
