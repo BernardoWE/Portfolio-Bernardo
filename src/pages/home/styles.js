@@ -177,4 +177,6 @@ transition: all 0.3s ease;
 `
 export const About = styled.section`
     min-height: 100vh;
+    background-color: ${Colors.sidebar};
+    outline: 1px solid rgba(255, 255, 255, 0.2);
 `
