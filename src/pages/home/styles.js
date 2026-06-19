@@ -1,0 +1,133 @@
+import styled from "styled-components";
+import img from '../../assets/images/herostage.jpg';
+export const Colors = {
+  background: '#090706',
+  foreground: '#f5f1ea',
+  card: '#120f0c',
+  cardForeground: '#f5f1ea',
+  popover: '#120f0c',
+  popoverForeground: '#f5f1ea',
+  primary: '#e1af4a',
+  primaryForeground: '#110c09',
+  secondary: '#1d1a17',
+  secondaryForeground: '#f5f1ea',
+  muted: '#1d1a17',
+  mutedForeground: '#9a9185',
+  accent: '#cc272e',
+  accentForeground: '#f9f4ee',
+  destructive: '#e7000b',
+//   border: oklch(0.28 0.01 70 / 60%);
+// border: rgba(44, 40, 36, 0.6),
+  input: '#2c2824',
+  ring: '#e1af4a',
+  chart1: '#e1af4a',
+  chart2: '#cc272e',
+  chart3: '#9a9185',
+  chart4: '#675136',
+  chart5: '#322d29',
+//   radius: 0.25rem;
+  sidebar: '#090706',
+  sidebarForeground: '#f5f1ea',
+  sidebarPrimary:'#e1af4a',
+  sidebarPrimaryForeground:'#110c09',
+  sidebarAccent: '#1d1a17',
+  sidebarAccentForeground: '#f5f1ea',
+//   sidebarBorder: oklch(0.28 0.01 70 / 60%);
+// sidebarBorder: rgba(44, 40, 36, 0.6),
+  sidebarRing: '#e1af4a',
+}
+export const Header = styled.header`
+    background-color: ${Colors.background};
+    padding: 1.3rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav div a{
+    display: flex;
+    gap: .5rem;
+}
+.span-mj{
+    color: ${Colors.primary};
+    font-weight: 700;
+
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    
+}
+a{
+    color: ${Colors.mutedForeground};
+    text-decoration: none;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: ${Colors.primary};
+}
+`
+export const Hero = styled.section`
+background: url(${img}) no-repeat center center;
+background-size: cover;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+.container-hero{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+max-width: 624px;
+}
+
+div h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: ${Colors.foreground} ;
+}
+div h1, span{
+    font-size: 7rem;
+}
+div h1 span{
+    color: ${Colors.primary};
+}
+p{
+    color: ${Colors.mutedForeground}
+}
+.container-buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+`
+
+export const Button = styled.button`
+background-color: ${props => props.primary ? Colors.primary : 'transparent'};
+color: ${props => props.primary ? Colors.primaryForeground : Colors.foreground};
+border: none;
+outline: ${props => props.primary ? 'none' : `1px solid ${Colors.secondary}`};
+padding: 1rem 2rem;
+font-size: 1.25rem;
+font-weight: 700;
+border-radius: 0.5rem;
+cursor: pointer;
+transition: all 0.3s ease;
+&:hover{
+    opacity: 0.9;
+    color: ${props => props.primary ? Colors.primaryForeground : Colors.primary};
+    outline: ${props => props.primary ? 'none' : `1px solid ${Colors.primary}`};
+}
+`
