@@ -179,4 +179,50 @@ export const About = styled.section`
     min-height: 100vh;
     background-color: ${Colors.sidebar};
     outline: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+.container-about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 72em;
+    align-items: center;
+    justify-self: center;
+    /* margin: 0 auto; */
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+}
+.about-text{
+    
+    h2{
+        font-family: ${fonts.heading};
+        color: ${Colors.foreground};
+        font-size: 2.5rem;
+    }
+    p{
+        font-family: ${fonts.body};
+        color: ${Colors.mutedForeground};
+    }
+   
+
+    .about-description{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+        line-height: 1.6;
+    }
+    .about-title{
+        color: ${Colors.primary};
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+}
 `
