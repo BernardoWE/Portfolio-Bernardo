@@ -28,14 +28,15 @@ function App() {
       </Header>
       <Hero>
         <div className='container-hero'>
-        <div>
-          <h1>MICHAEL <span>JACKSON</span></h1>
-          <p>O Rei do Pop. O artista que transformou cada palco em um templo, <br />cada passo em história e cada canção em eternidade.</p>
-        </div>
-        <div className='container-buttons'>
-          <Button primary>EXPLORAR DISCOGRAFIA</Button>
-          <Button>CONHEÇA A LENDA</Button>
-        </div>
+          <p className='hero-years'>1958 — 2009</p>
+          <div>
+            <h1>Michael <span>Jackson</span></h1>
+            <p>O Rei do Pop. O artista que transformou cada palco em um templo, <br />cada passo em história e cada canção em eternidade.</p>
+          </div>
+          <div className='container-buttons'>
+            <Button primary>EXPLORAR DISCOGRAFIA</Button>
+            <Button>CONHEÇA A LENDA</Button>
+          </div>
         </div>
       </Hero>
       

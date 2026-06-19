@@ -36,6 +36,10 @@ export const Colors = {
 // sidebarBorder: rgba(44, 40, 36, 0.6),
   sidebarRing: '#e1af4a',
 }
+export const fonts = {
+    heading: 'Playfair Display, sans-serif',
+    body: 'Geist, sans-serif',
+}
 export const Header = styled.header`
     background-color: ${Colors.background};
     padding: 1.3rem 2rem;
@@ -46,6 +50,7 @@ export const Header = styled.header`
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(12px); 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
 nav{
     display: flex;
     justify-content: space-between;
@@ -57,6 +62,7 @@ nav{
 nav div a{
     display: flex;
     gap: .5rem;
+    
 }
 .span-mj{
     color: ${Colors.primary};
@@ -72,7 +78,9 @@ nav ul{
 a{
     color: ${Colors.mutedForeground};
     text-decoration: none;
-    font-weight: 500;
+    font-family: ${fonts.body};
+    /* font-weight: 500; */
+    letter-spacing:3px;
 }
 nav ul li a:hover{
     color: ${Colors.primary};
@@ -91,15 +99,23 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+
 text-align: center;
 max-width: 624px;
+.hero-years{
+    color: ${Colors.primary};
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-size: .95em;
 }
-
 div h1{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: ${Colors.foreground} ;
+    font-family: ${fonts.heading};
+    font-weight: 700;
+    line-height: 1;
 }
 div h1, span{
     font-size: 7rem;
@@ -108,8 +124,15 @@ div h1 span{
     color: ${Colors.primary};
 }
 p{
-    color: ${Colors.mutedForeground}
+    color: ${Colors.mutedForeground};
+    font-family: ${fonts.body};
+    font-size: 1.25rem;
+    margin-top: 1rem;
 }
+}
+
+
+
 .container-buttons{
     display: flex;
     gap: 1rem;
