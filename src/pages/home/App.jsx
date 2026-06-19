@@ -29,7 +29,7 @@ function App() {
       <Hero>
         <div className='container-hero'>
           <p className='hero-years'>1958 — 2009</p>
-          <div>
+          <div className='container-text'>
             <h1>Michael <span>Jackson</span></h1>
             <p>O Rei do Pop. O artista que transformou cada palco em um templo, <br />cada passo em história e cada canção em eternidade.</p>
           </div>

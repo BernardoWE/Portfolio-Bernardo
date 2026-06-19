@@ -95,32 +95,38 @@ align-items: center;
 justify-content: center;
 
 .container-hero{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-
-text-align: center;
-max-width: 624px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    max-width: 624px;
 .hero-years{
     color: ${Colors.primary};
     letter-spacing: 4px;
     font-weight: 300;
     font-size: .95em;
 }
-div h1{
+.container-text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+}
+.container-text h1{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
     color: ${Colors.foreground} ;
     font-family: ${fonts.heading};
     font-weight: 700;
     line-height: 1;
 }
-div h1, span{
+.container-text h1, .container-text span{
     font-size: 7rem;
 }
-div h1 span{
+.container-text h1 span{
     color: ${Colors.primary};
 }
 p{
