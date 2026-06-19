@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import img from '../../assets/images/herostage.jpg';
 export const Colors = {
-  background: '#090706',
+  background: 'rgba(9, 7, 6, 0.8)',
   foreground: '#f5f1ea',
   card: '#120f0c',
   cardForeground: '#f5f1ea',
@@ -43,6 +43,9 @@ export const Header = styled.header`
     top: 0;
     width: 100%;
     z-index: 1000;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 nav{
     display: flex;
     justify-content: space-between;
