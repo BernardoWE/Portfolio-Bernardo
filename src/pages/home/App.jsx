@@ -4,15 +4,29 @@ import viteLogo from '../../assets/vite.svg'
 import heroImg from '../../assets/hero.png'
 import gloveImg from '../../assets/images/glove.png'
 import './styles.js'
-import { Header, Hero, Button, About } from './styles.js'
+import { Header, Hero, Button, About, Discography, Page } from './styles.js'
 
 function App() {
   const [count, setCount] = useState(0)
+  const cards = [
+    { year: 1979, title: "Off the Wall", note:"O disco que anunciou o nascimento de um gênio solo.", single:"Don't Stop 'Til You Get Enough"
+     },
+    { year: 1982, title: "Thriller", note:"O álbum mais vendido de todos os tempos. Um marco absoluto.", single:"Billie Jean · Beat It · Thriller"
+     },
+    { year: 1987, title: "Bad", note:"Cinco singles nº1 nos EUA — um feito inédito na história.", single:"Bad · The Way You Make Me Feel · Smooth Criminal"
+     },
+    { year: 1991, title: "Dangerous", note:"O som new jack swing e a reinvenção de uma era.", single:"Black or White · Remember the Time"
+     },
+    { year: 1995, title: "HIStory", note:"Parte grandes sucessos, parte manifesto pessoal.", single:"You Are Not Alone · Earth Song"
+     },
+    { year: 2001, title: "Invincible", note:"Seu último álbum de estúdio, sofisticado e ambicioso.", single:"You Rock My World"
+     },
 
+  ]
   return (
-    <>
-      <Header>
-        <nav>
+    <Page>
+      <Header >
+        <nav className='section-width'>
           <div>
             <a href="">
               <span className='span-mj'>MJ</span> 
@@ -27,8 +41,8 @@ function App() {
           </ul>
         </nav>
       </Header>
-      <Hero>
-        <div className='container-hero'>
+      <Hero >
+        <div className='container-hero section-width'>
           <p className='hero-years'>1958 — 2009</p>
           <div className='container-text'>
             <h1>Michael <span>Jackson</span></h1>
@@ -44,8 +58,8 @@ function App() {
         </div>
         
       </Hero>
-      <About>
-        <div className="container-about">
+      <About >
+        <div className="container-about section-width">
           <img src={gloveImg} alt="Michael Jackson Glove" />
           <div className="about-text">
             <p className='about-title'>A lenda</p>
@@ -70,10 +84,26 @@ function App() {
           </div>
         </div>
       </About>
+      <Discography >
+        <div className="container-discography section-width">
+          <p>Discografia</p>
+          <h2 className="discography-title">Álbuns que definiram gerações</h2>
+          <div className='discography-cards'>
+            {cards.map((album, index) => (
+              <div key={index} className='discography-card'>
+                <p>{album.year}</p>
+                <h3>{album.title}</h3>
+                <p>{album.note}</p>
+                <p>{album.single}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Discography>
       
 
       
-    </>
+    </Page>
   )
 }
 

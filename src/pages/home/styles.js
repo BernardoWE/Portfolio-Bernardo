@@ -40,6 +40,13 @@ export const fonts = {
     heading: 'Playfair Display, sans-serif',
     body: 'Geist, sans-serif',
 }
+export const Page = styled.div`
+    .section-width{
+        width: min(1152px, calc(100% - 2rem));
+        margin: 0 auto;
+    }
+
+`
 export const Header = styled.header`
     background-color: ${Colors.background};
     padding: 1.3rem 2rem;
@@ -51,12 +58,14 @@ export const Header = styled.header`
     -webkit-backdrop-filter: blur(12px); 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     
+    
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    /* width: 100%;
+    max-width: 1200px; */
+     /* width: min(1152px, calc(100% - 2rem)); */
     margin: 0 auto;
 }
 nav div a{
@@ -186,10 +195,11 @@ export const About = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 72em;
+    /* max-width: 72em; */
+    /* width: min(1280px, calc(100% - 2rem));
+    margin: 0 auto; */
     align-items: center;
     justify-self: center;
-    /* margin: 0 auto; */
     img{
         max-width: 100%;
         height: auto;
@@ -235,4 +245,19 @@ export const About = styled.section`
         margin-top: 2em;
     }
 }
+`
+export const Discography = styled.section`
+    min-height: 100vh;
+    background-color: ${Colors.sidebar};
+    
+    .discography-cards{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        background-color: ${Colors.card};
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .discography-card{
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1em;
+    }
 `
