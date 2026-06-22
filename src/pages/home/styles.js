@@ -254,10 +254,47 @@ export const Discography = styled.section`
         display: grid;
         grid-template-columns: repeat(3, minmax(250px, 1fr));
         background-color: ${Colors.card};
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, .08);
+        border-top:1px solid rgba(255, 255, 255, .08);
+        
     }
     .discography-card{
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 1em;
+        /* border: 1px solid rgba(255, 255, 255, 0.03); */
+        border-right: 1px solid rgba(255,255,255,.05);
+        border-bottom: 1px solid rgba(255,255,255,.05);
+        padding: 2em;
+        font-family: ${fonts.body};
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        .discography-card-title{
+            color: ${Colors.cardForeground};
+            font-family: ${fonts.heading};
+            font-size: 1.5rem;
+        }
+        .discography-card-year{
+            color: ${Colors.primary};
+        }
+        .discography-card-note{
+            color: ${Colors.mutedForeground};
+        }
+        .discography-card-single{
+            color: ${Colors.secondaryForeground};
+            opacity: .7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            /* margin-top: 4em; */
+            margin-top: auto;
+            padding-top: 1em;
+        }
+        p{
+            font-size: .9em;
+        }
+        transition: all ease-in .1s;
+    }
+    .discography-card:hover{
+        background-color: ${Colors.secondary};
     }
 `

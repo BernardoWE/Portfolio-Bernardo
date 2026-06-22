@@ -13,7 +13,7 @@ function App() {
      },
     { year: 1982, title: "Thriller", note:"O álbum mais vendido de todos os tempos. Um marco absoluto.", single:"Billie Jean · Beat It · Thriller"
      },
-    { year: 1987, title: "Bad", note:"Cinco singles nº1 nos EUA — um feito inédito na história.", single:"Bad · The Way You Make Me Feel · Smooth Criminal"
+    { year: 1987, title: "Bad", note:"Cinco singles nº1 nos EUA — um feito inédito na história.", single:"Bad · Smooth Criminal"
      },
     { year: 1991, title: "Dangerous", note:"O som new jack swing e a reinvenção de uma era.", single:"Black or White · Remember the Time"
      },
@@ -91,10 +91,10 @@ function App() {
           <div className='discography-cards'>
             {cards.map((album, index) => (
               <div key={index} className='discography-card'>
-                <p>{album.year}</p>
-                <h3>{album.title}</h3>
-                <p>{album.note}</p>
-                <p>{album.single}</p>
+                <p className='discography-card-year'>{album.year}</p>
+                <h3 className='discography-card-title'>{album.title}</h3>
+                <p className='discography-card-note'>{album.note}</p>
+                <p className='discography-card-single'>{album.single}</p>
               </div>
             ))}
           </div>
