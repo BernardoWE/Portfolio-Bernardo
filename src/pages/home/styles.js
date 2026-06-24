@@ -103,7 +103,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
+border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 .container-hero{
     display: flex;
     align-items: center;
@@ -187,7 +187,7 @@ transition: all 0.3s ease;
 export const About = styled.section`
     min-height: 100vh;
     background-color: ${Colors.sidebar};
-    outline: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,10 +248,11 @@ export const About = styled.section`
 `
 export const Discography = styled.section`
     min-height: 100vh;
-    background-color: ${Colors.sidebar};
+    background-color: ${Colors.sidebarPrimaryForeground};
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     .container-discography{
         display: flex;
         flex-direction: column;
@@ -320,4 +321,10 @@ export const Discography = styled.section`
     .discography-card:hover{
         background-color: ${Colors.secondary};
     }
+`
+
+export const Moments = styled.section`
+    min-height: 100vh;
+    background-color: ${Colors.sidebar};
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 `
