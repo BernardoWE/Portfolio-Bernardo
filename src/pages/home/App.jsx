@@ -4,6 +4,7 @@ import viteLogo from '../../assets/vite.svg'
 import heroImg from '../../assets/hero.png'
 import gloveImg from '../../assets/images/glove.png'
 import imgConcert from '../../assets/images/concert.png';
+import imgShoes from '../../assets/images/shoes.png';
 import './styles.js'
 import { Header, Hero, Button, About, Discography, Page, Moments } from './styles.js'
 
@@ -111,6 +112,7 @@ function App() {
           </div>
           <div className="grid-moments">
             <div className='moments-concert'>
+              <img src={imgConcert} alt="" />
               <div>
                 <h3>
                   Espetáculos inesquecíveis
@@ -121,6 +123,7 @@ function App() {
               </div>
             </div>
             <div className='moments-moonwalk'>
+              <img src={imgShoes} alt="" />
               <div>
                 <h3>
                   O Moonwalk
@@ -145,7 +148,8 @@ function App() {
             </div>
           </div>
         </div>
-      </Moments>
+       
+      </Moments>      
 
       
     </Page>

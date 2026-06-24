@@ -169,22 +169,22 @@ p{
 `
 
 export const Button = styled.button`
-background-color: ${props => props.primary ? Colors.primary : 'transparent'};
-color: ${props => props.primary ? Colors.primaryForeground : Colors.foreground};
-border: none;
-outline: ${props => props.primary ? 'none' : `1px solid ${Colors.mutedForeground}`};
-padding: 1rem 2rem;
-/* font-size: 1.25rem; */
-letter-spacing: 2px;
-font-weight: 700;
-border-radius: 0.3rem;
-cursor: pointer;
-transition: all 0.3s ease;
-&:hover{
-    opacity: 0.9;
-    color: ${props => props.primary ? Colors.primaryForeground : Colors.primary};
-    outline: ${props => props.primary ? 'none' : `1px solid ${Colors.primary}`};
-}
+    background-color: ${props => props.primary ? Colors.primary : 'transparent'};
+    color: ${props => props.primary ? Colors.primaryForeground : Colors.foreground};
+    border: none;
+    outline: ${props => props.primary ? 'none' : `1px solid ${Colors.mutedForeground}`};
+    padding: 1rem 2rem;
+    /* font-size: 1.25rem; */
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+        opacity: 0.9;
+        color: ${props => props.primary ? Colors.primaryForeground : Colors.primary};
+        outline: ${props => props.primary ? 'none' : `1px solid ${Colors.primary}`};
+    }
 `
 export const About = styled.section`
     min-height: 100vh;
@@ -369,28 +369,37 @@ export const Moments = styled.section`
         gap: 1.5em;
     }
     .moments-concert{
-        background:  linear-gradient(
+        /* background:  linear-gradient(
          rgba(0, 0, 0, 0.5),
          rgba(0, 0, 0, 0.5)
-        ),url(${imgConcert}) no-repeat center center;
-        background-size: cover;
+        ),url(${imgConcert}) no-repeat center center; */
         grid-area: moments-concert;
         border-radius: 0.2rem;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: calc(.25em * 8);
         position: relative;
+        overflow: hidden;
+        img{
+            transition: all .7s ease;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+    
+        }
         img:hover{
-            transform: scale(1.02);
+            
+            transform: 
+            scale(1.05);
         }
         div{
             position: absolute;
-            bottom: calc(.25em * 8);
+            bottom: 0;
             display: flex;
             flex-direction: column;
             gap: 1em;
+            padding: calc(.25em * 8);
+            
         }
-        /* height: 10em;
-        width: 50em; */
+
         p{
             color: ${Colors.mutedForeground};
             
@@ -402,22 +411,35 @@ export const Moments = styled.section`
         }
     }
     .moments-moonwalk{
-        background: linear-gradient(
+        /* background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url(${imgShoes}) no-repeat center center;
+    ), url(${imgShoes}) no-repeat center center; */
         background-size: cover;
         grid-area: moments-moonwalk;
         border-radius: 0.2rem;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: calc(.25em * 8);
         position: relative;
+        overflow: hidden;
+        img{
+            transition: all .7s ease;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+    
+        }
+        img:hover{
+            
+            transform: 
+            scale(1.05);
+        }
         div{
             position: absolute;
-            bottom: calc(.25em * 8);
+            bottom: 0;
             display: flex;
             flex-direction: column;
             gap: 1em;
+             padding: calc(.25em * 8);
         }
         p{
             color: ${Colors.mutedForeground};
@@ -455,3 +477,4 @@ export const Moments = styled.section`
         }
     }
 `
+
