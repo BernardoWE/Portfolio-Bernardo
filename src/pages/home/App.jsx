@@ -3,6 +3,7 @@ import reactLogo from '../../assets/react.svg'
 import viteLogo from '../../assets/vite.svg'
 import heroImg from '../../assets/hero.png'
 import gloveImg from '../../assets/images/glove.png'
+import imgConcert from '../../assets/images/concert.png';
 import './styles.js'
 import { Header, Hero, Button, About, Discography, Page, Moments } from './styles.js'
 
@@ -109,23 +110,28 @@ function App() {
             <h2>Instantes que entraram para a história</h2>
           </div>
           <div className="grid-moments">
-            <div className='moments-shows'>
-              <h3>
-                Espetáculos inesquecíveis
-              </h3>
-              <p>
-                Turnês que reuniram milhões de fãs e redefiniram o que um show ao vivo poderia ser.
-              </p>
+            <div className='moments-concert'>
+              <div>
+                <h3>
+                  Espetáculos inesquecíveis
+                </h3>
+                <p>
+                  Turnês que reuniram milhões de fãs e redefiniram o que um <br />show ao vivo poderia ser.
+                </p>
+              </div>
             </div>
             <div className='moments-moonwalk'>
-              <h3>
-                O Moonwalk
-              </h3>
-              <p>
-                Apresentado ao mundo em 1983, o passo se tornou seu símbolo eterno.
-              </p>
+              <div>
+                <h3>
+                  O Moonwalk
+                </h3>
+                <p>
+                  Apresentado ao mundo em 1983, o passo se tornou seu símbolo eterno.
+                </p>
+              </div>
             </div>
             <div className='moments-grammy'>
+              <div>
               <p>
                 13
               </p>
@@ -133,8 +139,9 @@ function App() {
                 Grammy Awards
               </h3>
               <p>
-                Incluindo um recorde histórico de oito prêmios em uma única noite, em 1984, com Thriller.
+                Incluindo um recorde histórico de oito prêmios em uma única noite, <br /> em 1984, com Thriller.
               </p>
+              </div>
             </div>
           </div>
         </div>

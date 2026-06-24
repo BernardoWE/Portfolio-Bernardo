@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import img from '../../assets/images/herostage.jpg';
+import imgHero from '../../assets/images/herostage.jpg';
+import imgConcert from '../../assets/images/concert.png';
+import imgShoes from '../../assets/images/shoes.png';
 export const Colors = {
   background: 'rgba(9, 7, 6, 0.8)',
   foreground: '#f5f1ea',
@@ -96,7 +98,7 @@ nav ul li a:hover{
 }
 `
 export const Hero = styled.section`
-background: url(${img}) no-repeat center center;
+background: url(${imgHero}) no-repeat center center;
 background-size: cover;
 min-height: 100vh;
 display: flex;
@@ -263,7 +265,7 @@ export const Discography = styled.section`
         max-width: 30em;
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: 1.5em;
         p{
             color: ${Colors.primary};
             text-transform: uppercase;
@@ -324,7 +326,132 @@ export const Discography = styled.section`
 `
 
 export const Moments = styled.section`
-    min-height: 100vh;
-    background-color: ${Colors.sidebar};
+    min-height: 100vh;background-color: ${Colors.sidebar};
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+.container-moments{
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    p{
+        font-size: .9em;
+        /* text-wrap:balance; */
+    }
+}
+    .title-moments{
+        text-wrap: balance;
+        max-width: 30em;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        
+        p{
+            color: ${Colors.primary};
+            text-transform: uppercase;
+            letter-spacing: .4em;
+        }
+        h2{
+            color: ${Colors.cardForeground};
+            font-size: 3rem;
+        }
+    }
+    .grid-moments{
+        display: grid;
+        height: 38em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas:
+            "moments-concert moments-moonwalk"
+            "moments-concert moments-grammy"
+        ;
+        gap: 1.5em;
+    }
+    .moments-concert{
+        background:  linear-gradient(
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+        ),url(${imgConcert}) no-repeat center center;
+        background-size: cover;
+        grid-area: moments-concert;
+        border-radius: 0.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: calc(.25em * 8);
+        position: relative;
+        img:hover{
+            transform: scale(1.02);
+        }
+        div{
+            position: absolute;
+            bottom: calc(.25em * 8);
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        /* height: 10em;
+        width: 50em; */
+        p{
+            color: ${Colors.mutedForeground};
+            
+        }
+        h3{
+            color: ${Colors.cardForeground};
+            font-family: ${fonts.heading};
+            font-size: 1.5rem;
+        }
+    }
+    .moments-moonwalk{
+        background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(${imgShoes}) no-repeat center center;
+        background-size: cover;
+        grid-area: moments-moonwalk;
+        border-radius: 0.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: calc(.25em * 8);
+        position: relative;
+        div{
+            position: absolute;
+            bottom: calc(.25em * 8);
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        p{
+            color: ${Colors.mutedForeground};
+        }
+        h3{
+            color: ${Colors.cardForeground};
+            font-family: ${fonts.heading};
+            font-size: 1.5rem;
+        }
+    }
+    .moments-grammy{
+        grid-area: moments-grammy;
+        border-radius: 0.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: calc(.25em * 8);
+        background-color: ${Colors.card};
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        p:first-of-type{
+             color: ${Colors.primary};
+             font-size: 3em;
+             font-family: ${fonts.heading};
+             text-wrap:balance;
+        }
+        p{
+            color: ${Colors.mutedForeground};
+        }
+        h3{
+            color: ${Colors.cardForeground};
+            font-family: ${fonts.heading};
+            font-size: 1.5rem;
+        }
+    }
 `
