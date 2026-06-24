@@ -249,7 +249,30 @@ export const About = styled.section`
 export const Discography = styled.section`
     min-height: 100vh;
     background-color: ${Colors.sidebar};
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container-discography{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .container-discography-title{
+        text-wrap: balance;
+        max-width: 30em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        p{
+            color: ${Colors.primary};
+            text-transform: uppercase;
+            letter-spacing: .4em;
+        }
+        h2{
+            color: ${Colors.cardForeground};
+            font-size: 3rem;
+        }
+    }
     .discography-cards{
         display: grid;
         grid-template-columns: repeat(3, minmax(250px, 1fr));

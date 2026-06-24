@@ -86,8 +86,10 @@ function App() {
       </About>
       <Discography >
         <div className="container-discography section-width">
-          <p>Discografia</p>
-          <h2 className="discography-title">Álbuns que definiram gerações</h2>
+          <div className='container-discography-title'>
+            <p>Discografia</p>
+            <h2 className="discography-title">Álbuns que definiram gerações</h2>
+          </div>
           <div className='discography-cards'>
             {cards.map((album, index) => (
               <div key={index} className='discography-card'>
