@@ -98,14 +98,14 @@ nav ul li a:hover{
 }
 `
 export const Hero = styled.section`
-background: url(${imgHero}) no-repeat center center;
-background-size: cover;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: url(${imgHero}) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 .container-hero{
     display: flex;
     align-items: center;
@@ -250,7 +250,8 @@ export const About = styled.section`
 `
 export const Discography = styled.section`
     min-height: 100vh;
-    background-color: ${Colors.sidebarPrimaryForeground};
+    /* background-color: ${Colors.sidebarPrimaryForeground}; */
+    background-color: oklch(0.146 0.0062 60);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,7 +404,7 @@ export const Moments = styled.section`
 
         p{
             color: ${Colors.mutedForeground};
-            
+            font-family: ${fonts.body};
         }
         h3{
             color: ${Colors.cardForeground};
@@ -445,6 +446,7 @@ export const Moments = styled.section`
         }
         p{
             color: ${Colors.mutedForeground};
+            font-family: ${fonts.body};
         }
         h3{
             color: ${Colors.cardForeground};
@@ -471,6 +473,7 @@ export const Moments = styled.section`
         }
         p{
             color: ${Colors.mutedForeground};
+            font-family: ${fonts.body};
         }
         h3{
             color: ${Colors.cardForeground};
@@ -479,4 +482,66 @@ export const Moments = styled.section`
         }
     }
 `
+export const Legacy = styled.section`
+    /* background-color: ${Colors.sidebarPrimaryForeground}; */
+    background-color:oklch(0.146 0.0062 60);
+    min-height: 70vh;
+    .container-legacy{
+         /* margin: 0 auto; */
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 2em;
+         min-height: 70vh;
+    }
+    .title-legacy{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        /* align-items: center; */
+        text-align: center;
+        /* justify-content: center; */
+        width: 40em;
+        p{
+            font-family: ${fonts.body};
+            color: ${Colors.mutedForeground};
+        }
+        h2{
+            color: ${Colors.cardForeground};
+            font-size: 3rem;
+            font-family: ${fonts.heading};
+            text-wrap: balance;
+        }
+        p:first-of-type{
+            color: ${Colors.primary};
+            text-transform: uppercase;
+            letter-spacing: .4em;
+        }
+    }
+    .cards-legacy{
+        display: flex;
+        background-color: ${Colors.card};
+        /* background-color: rgb(18 15 12 ); */
 
+
+    }
+    .card-legacy{
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        padding: 2em;
+        text-align: center;
+        p{
+            font-family: ${fonts.body};
+            color: ${Colors.mutedForeground};
+            text-transform: uppercase;
+        }
+        h2{
+            color: ${Colors.primary};
+            font-size: 3rem;
+            font-family: ${fonts.heading};
+            text-wrap: balance;
+            
+        }
+    }
+`

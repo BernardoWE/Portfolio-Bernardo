@@ -6,7 +6,7 @@ import gloveImg from '../../assets/images/glove.png'
 import imgConcert from '../../assets/images/concert.png';
 import imgShoes from '../../assets/images/shoes.png';
 import './styles.js'
-import { Header, Hero, Button, About, Discography, Page, Moments } from './styles.js'
+import { Header, Hero, Button, About, Discography, Page, Moments, Legacy } from './styles.js'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -150,7 +150,33 @@ function App() {
         </div>
        
       </Moments>      
-
+      <Legacy>
+        <div className="container-legacy section-width">
+          <div className='title-legacy'>
+            <p>Legado</p>
+            <h2>Um Rei que nunca deixará o trono</h2>
+            <p>Décadas depois, sua música continua tocando, seus passos continuam sendo copiados e sua influência permanece viva em cada artista que ousa sonhar grande.</p>
+          </div>
+          <div className='cards-legacy section-width'>
+            <div className='card-legacy'>
+              <h2>400M+</h2>
+              <p>Discos vendidos</p>
+            </div>
+            <div className='card-legacy'>
+              <h2>13</h2>
+              <p>Grammy Awards</p>
+            </div>
+            <div className='card-legacy'>
+              <h2>Nº 1</h2>
+              <p>Thriller, o álbum mais vendido</p>
+            </div>
+            <div className='card-legacy'>
+              <h2>∞</h2>
+              <p>Gerações inspiradas</p>
+            </div>
+          </div>
+        </div>
+      </Legacy>
       
     </Page>
   )
