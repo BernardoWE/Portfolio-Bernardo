@@ -397,6 +397,7 @@ export const Moments = styled.section`
             flex-direction: column;
             gap: 1em;
             padding: calc(.25em * 8);
+            pointer-events:none;
             
         }
 
@@ -440,6 +441,7 @@ export const Moments = styled.section`
             flex-direction: column;
             gap: 1em;
              padding: calc(.25em * 8);
+             pointer-events:none;
         }
         p{
             color: ${Colors.mutedForeground};
