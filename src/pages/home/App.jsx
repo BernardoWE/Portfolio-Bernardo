@@ -30,7 +30,7 @@ function App() {
       <Header >
         <nav className='section-width'>
           <div>
-            <a href="">
+            <a href="#hero">
               <span className='span-mj'>MJ</span> 
               <span>REI DO POP</span>
             </a>
@@ -43,7 +43,7 @@ function App() {
           </ul>
         </nav>
       </Header>
-      <Hero >
+      <Hero id='hero'>
         <div className='container-hero section-width'>
           <p className='hero-years'>1958 — 2009</p>
           <div className='container-text'>
@@ -60,7 +60,7 @@ function App() {
         </div>
         
       </Hero>
-      <About >
+      <About id='about'>
         <div className="container-about section-width">
           <img src={gloveImg} alt="Michael Jackson Glove" />
           <div className="about-text">
@@ -86,7 +86,7 @@ function App() {
           </div>
         </div>
       </About>
-      <Discography >
+      <Discography id='discography'>
         <div className="container-discography section-width">
           <div className='container-discography-title'>
             <p>Discografia</p>
@@ -104,7 +104,7 @@ function App() {
           </div>
         </div>
       </Discography>
-      <Moments>
+      <Moments id='moments'>
         <div className="container-moments section-width">
           <div className='title-moments'>
             <p>Momentos icônicos</p>
@@ -150,7 +150,7 @@ function App() {
         </div>
        
       </Moments>      
-      <Legacy>
+      <Legacy id='legacy'>
         <div className="container-legacy section-width">
           <div className='title-legacy'>
             <p>Legado</p>
