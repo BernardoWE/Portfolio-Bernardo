@@ -6,7 +6,7 @@ import gloveImg from '../../assets/images/glove.png'
 import imgConcert from '../../assets/images/concert.png';
 import imgShoes from '../../assets/images/shoes.png';
 import './styles.js'
-import { Header, Hero, Button, About, Discography, Page, Moments, Legacy } from './styles.js'
+import { Header, Hero, Button, About, Discography, Page, Moments, Legacy, Footer } from './styles.js'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -177,7 +177,27 @@ function App() {
           </div>
         </div>
       </Legacy>
-      
+      <Footer>
+        <div className="container-footer section-width">
+          <div className='title-footer'>
+            <h2>
+              MJ
+            </h2>
+            <p>
+              Este é um site tributo, criado por fãs para celebrar o legado artístico de Michael Jackson, o Rei do Pop.
+            </p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#about">SOBRE</a></li>
+              <li><a href="#discography">DISCOGRAFIA</a></li>
+              <li><a href="#moments">MOMENTOS</a></li>
+              <li><a href="#legacy">LEGADO</a></li>
+            </ul> 
+          </nav>
+          <p className='copyright'>© 2026 Tributo ao Rei do Pop. Feito com admiração.</p>
+        </div>
+      </Footer>
     </Page>
   )
 }
