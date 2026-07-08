@@ -13,7 +13,7 @@ function App() {
   function toggleMenu() {
     setIsMenuOpened(!isMenuOpened)
     menuButton.classList.toggle('is-opened')
-
+    // menu.classList.toggle('menu-hamburguer')
   }
 
   const cards = [

@@ -95,22 +95,24 @@ nav{
   transform: translateY(-8px) rotate(-45deg);
 }
 @media (max-width: 1024px){ 
-        .menu-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 6px;
-  width: 56px;
-  /* height: 56px; */
-  border: none;
-  /* border: 1px solid #333333; */
-  background-color: transparent;
-  /* background-color: #ffffff; */
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 6px;
+        width: 56px;
+        cursor: pointer;
+        /* height: 56px; */
+        border: none;
+        /* border: 1px solid #333333; */
+        background-color: transparent;
+        /* background-color: #ffffff; */
 }
-.menu{
-    display: none;
-}
+    .menu{
+        display: none;
+    }
+
     }
 }
 nav div a{
