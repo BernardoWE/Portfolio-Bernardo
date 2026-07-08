@@ -9,7 +9,13 @@ import './styles.js'
 import { Header, Hero, Button, About, Discography, Page, Moments, Legacy, Footer } from './styles.js'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isMenuOpened, setIsMenuOpened] = useState(false)
+  function toggleMenu() {
+    setIsMenuOpened(!isMenuOpened)
+    menuButton.classList.toggle('is-opened')
+
+  }
+
   const cards = [
     { year: 1979, title: "Off the Wall", note:"O disco que anunciou o nascimento de um gênio solo.", single:"Don't Stop 'Til You Get Enough"
      },
@@ -35,13 +41,19 @@ function App() {
               <span>REI DO POP</span>
             </a>
           </div>
-          <ul>
+          <ul className='menu' id='menu'>
             <li><a href="#about">SOBRE</a></li>
             <li><a href="#discography">DISCOGRAFIA</a></li>
             <li><a href="#moments">MOMENTOS</a></li>
             <li><a href="#legacy">LEGADO</a></li>
           </ul>
+          <button onClick={toggleMenu} id="menuButton" type="button" className="menu-button" aria-labelledby="menuButtonLabel">
+            <span className="menu-button__line ">
+              <span id="menuButtonLabel " ></span>
+            </span>
+          </button>
         </nav>
+       
       </Header>
       <Hero id='hero'>
         <div className='container-hero section-width'>
@@ -52,7 +64,7 @@ function App() {
           </div>
           <div className='container-buttons'>
             <a href="#discography">
-            <Button primary>EXPLORAR DISCOGRAFIA</Button></a>
+            <Button theme='primary'>EXPLORAR DISCOGRAFIA</Button></a>
             <a href="#legacy">
             <Button>CONHEÇA A LENDA</Button></a>
           </div>

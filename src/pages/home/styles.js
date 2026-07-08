@@ -69,6 +69,49 @@ nav{
     max-width: 1200px; */
      /* width: min(1152px, calc(100% - 2rem)); */
     margin: 0 auto;
+    
+    .menu-button{
+        display: none;}
+
+.menu-button__line,
+.menu-button::before,
+.menu-button::after {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background-color: ${Colors.foreground};
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-button.is-opened .menu-button__line {
+  opacity: 0;
+}
+
+.menu-button.is-opened::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-button.is-opened::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+@media (max-width: 1024px){ 
+        .menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  width: 56px;
+  /* height: 56px; */
+  border: none;
+  /* border: 1px solid #333333; */
+  background-color: transparent;
+  /* background-color: #ffffff; */
+}
+.menu{
+    display: none;
+}
+    }
 }
 nav div a{
     display: flex;
@@ -169,10 +212,10 @@ p{
 `
 
 export const Button = styled.button`
-    background-color: ${props => props.primary ? Colors.primary : 'transparent'};
-    color: ${props => props.primary ? Colors.primaryForeground : Colors.foreground};
+    background-color: ${props => props.theme === 'primary' ? Colors.primary : 'transparent'};
+    color: ${props => props.theme === 'primary' ? Colors.primaryForeground : Colors.foreground};
     border: none;
-    outline: ${props => props.primary ? 'none' : `1px solid ${Colors.mutedForeground}`};
+    outline: ${props => props.theme === 'primary' ? 'none' : `1px solid ${Colors.mutedForeground}`};
     padding: 1rem 2rem;
     /* font-size: 1.25rem; */
     letter-spacing: 2px;
@@ -182,8 +225,8 @@ export const Button = styled.button`
     transition: all 0.3s ease;
     &:hover{
         opacity: 0.9;
-        color: ${props => props.primary ? Colors.primaryForeground : Colors.primary};
-        outline: ${props => props.primary ? 'none' : `1px solid ${Colors.primary}`};
+        color: ${props => props.theme === 'primary' ? Colors.primaryForeground : Colors.primary};
+        outline: ${props => props.theme === 'primary' ? 'none' : `1px solid ${Colors.primary}`};
     }
 `
 export const About = styled.section`
