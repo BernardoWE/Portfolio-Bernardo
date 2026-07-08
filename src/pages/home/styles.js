@@ -289,7 +289,7 @@ export const About = styled.section`
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        @media (max-width: 768px){
+        @media (max-width: 800px){
             grid-template-columns: 1fr;
         }
     
@@ -339,6 +339,7 @@ export const Discography = styled.section`
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-block: 5em;
     .container-discography{
         display: flex;
         flex-direction: column;
@@ -366,6 +367,12 @@ export const Discography = styled.section`
         background-color: ${Colors.card};
         border-left: 1px solid rgba(255, 255, 255, .08);
         border-top:1px solid rgba(255, 255, 255, .08);
+        @media (max-width: 800px){
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+        }
+        @media (max-width: 550px){
+            grid-template-columns: 1fr;
+        }
         
     }
     .discography-card{
@@ -412,6 +419,12 @@ export const Discography = styled.section`
 export const Moments = styled.section`
     min-height: 100vh;background-color: ${Colors.sidebar};
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        
+        @media (max-width: 800px){
+           padding-block: 5em;
+        ;
+        }
+
 .container-moments{
     min-height: 100vh;
     color: white;
@@ -451,6 +464,16 @@ export const Moments = styled.section`
             "moments-concert moments-grammy"
         ;
         gap: 1.5em;
+        @media (max-width: 800px){
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "moments-concert"
+            "moments-moonwalk"
+            "moments-grammy"
+        ;
+        }
     }
     .moments-concert{
         /* background:  linear-gradient(
@@ -577,6 +600,13 @@ export const Legacy = styled.section`
          align-items: center;
          gap: 2em;
          min-height: 70vh;
+         
+         /* @media (max-width: 800px){
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+        }
+        @media (max-width: 550px){
+            grid-template-columns: 1fr;
+        } */
     }
     .title-legacy{
         display: flex;
@@ -605,6 +635,7 @@ export const Legacy = styled.section`
     .cards-legacy{
         display: flex;
         background-color: ${Colors.card};
+        flex-wrap: wrap;
         /* background-color: rgb(18 15 12 ); */
 
 
@@ -614,6 +645,7 @@ export const Legacy = styled.section`
         width: 100%;
         padding: 2em;
         text-align: center;
+        flex: 1;
         p{
             font-family: ${fonts.body};
             color: ${Colors.mutedForeground};

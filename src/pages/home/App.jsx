@@ -34,7 +34,7 @@ function App() {
   return (
     <Page>
       <Header >
-        <div className="header-container">
+        <div className="header-container ">
           <div className='nav-header section-width'>
             <div>
               <a href="#hero">
