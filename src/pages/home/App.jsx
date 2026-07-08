@@ -34,26 +34,36 @@ function App() {
   return (
     <Page>
       <Header >
-        <nav className='section-width'>
-          <div>
-            <a href="#hero">
-              <span className='span-mj'>MJ</span> 
-              <span>REI DO POP</span>
-            </a>
+        <div className="header-container">
+          <div className='nav-header section-width'>
+            <div>
+              <a href="#hero">
+                <span className='span-mj'>MJ</span> 
+                <span>REI DO POP</span>
+              </a>
+            </div>
+            <ul className='menu' id='menu'>
+              <li><a href="#about">SOBRE</a></li>
+              <li><a href="#discography">DISCOGRAFIA</a></li>
+              <li><a href="#moments">MOMENTOS</a></li>
+              <li><a href="#legacy">LEGADO</a></li>
+            </ul>
+            <button onClick={toggleMenu} id="menuButton" type="button" className="menu-button" aria-labelledby="menuButtonLabel">
+              <span className="menu-button__line ">
+                <span id="menuButtonLabel " ></span>
+              </span>
+            </button>
+            
           </div>
-          <ul className='menu' id='menu'>
-            <li><a href="#about">SOBRE</a></li>
-            <li><a href="#discography">DISCOGRAFIA</a></li>
-            <li><a href="#moments">MOMENTOS</a></li>
-            <li><a href="#legacy">LEGADO</a></li>
-          </ul>
-          <button onClick={toggleMenu} id="menuButton" type="button" className="menu-button" aria-labelledby="menuButtonLabel">
-            <span className="menu-button__line ">
-              <span id="menuButtonLabel " ></span>
-            </span>
-          </button>
-        </nav>
-       
+          {isMenuOpened && (
+              <ul className='menu-hamburguer' id='menu'>
+                <li><a href="#about" onClick={toggleMenu}>SOBRE</a></li>
+                <li><a href="#discography" onClick={toggleMenu}>DISCOGRAFIA</a></li>
+                <li><a href="#moments" onClick={toggleMenu}>MOMENTOS</a></li>
+                <li><a href="#legacy" onClick={toggleMenu}>LEGADO</a></li>
+              </ul>
+            )}
+        </div>
       </Header>
       <Hero id='hero'>
         <div className='container-hero section-width'>

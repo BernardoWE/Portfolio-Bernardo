@@ -50,6 +50,46 @@ export const Page = styled.div`
 
 `
 export const Header = styled.header`
+    /* background-color: ${Colors.background};
+    padding: 1.3rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    
+    
+
+.nav-header div a{
+    display: flex;
+    gap: .5rem;
+    
+}
+.span-mj{
+    color: ${Colors.primary};
+    font-weight: 700;
+
+}
+.nav-header .menu{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    
+}
+a{
+    color: ${Colors.mutedForeground};
+    text-decoration: none;
+    font-family: ${fonts.body};
+    /* font-weight: 500; */
+    letter-spacing:3px;
+}
+.nav-header .menu li a:hover{
+    color: ${Colors.primary};
+}
+
+.nav-header{
     background-color: ${Colors.background};
     padding: 1.3rem 2rem;
     position: fixed;
@@ -59,9 +99,6 @@ export const Header = styled.header`
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(12px); 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    
-    
-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,17 +107,20 @@ nav{
      /* width: min(1152px, calc(100% - 2rem)); */
     margin: 0 auto;
     
-    .menu-button{
+    
+}
+.header-container{
+.menu-button{
         display: none;}
 
 .menu-button__line,
 .menu-button::before,
 .menu-button::after {
-  content: "";
-  width: 28px;
-  height: 2px;
-  background-color: ${Colors.foreground};
-  transition: transform 0.3s, opacity 0.3s;
+    content: "";
+    width: 28px;
+    height: 2px;
+    background-color: ${Colors.foreground};
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .menu-button.is-opened .menu-button__line {
@@ -93,6 +133,9 @@ nav{
 
 .menu-button.is-opened::after {
   transform: translateY(-8px) rotate(-45deg);
+}
+.menu-hamburguer{
+    display: none;
 }
 @media (max-width: 1024px){ 
     .menu-button {
@@ -112,34 +155,24 @@ nav{
     .menu{
         display: none;
     }
-
+.menu-hamburguer{
+    background-color: ${Colors.background};
+    padding: 1.3rem 2rem;
+    position: fixed;
+    top: 4em;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+     li a:hover{
+    color: ${Colors.primary};
+}
+}
     }
-}
-nav div a{
-    display: flex;
-    gap: .5rem;
-    
-}
-.span-mj{
-    color: ${Colors.primary};
-    font-weight: 700;
-
-}
-nav ul{
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    
-}
-a{
-    color: ${Colors.mutedForeground};
-    text-decoration: none;
-    font-family: ${fonts.body};
-    /* font-weight: 500; */
-    letter-spacing:3px;
-}
-nav ul li a:hover{
-    color: ${Colors.primary};
 }
 `
 export const Hero = styled.section`
