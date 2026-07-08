@@ -271,22 +271,27 @@ export const About = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-.container-about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    /* max-width: 72em; */
-    /* width: min(1280px, calc(100% - 2rem));
-    margin: 0 auto; */
-    align-items: center;
-    justify-self: center;
-    img{
-        max-width: 100%;
-        height: auto;
-        border-radius: 0.2rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-    }
+    padding-block: 5em;
+    .container-about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        /* max-width: 72em; */
+        /* width: min(1280px, calc(100% - 2rem));
+        margin: 0 auto; */
+        align-items: center;
+        justify-self: center;
+        
+        img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @media (max-width: 768px){
+            grid-template-columns: 1fr;
+        }
     
 }
 .about-text{
