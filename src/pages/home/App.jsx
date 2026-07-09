@@ -75,7 +75,7 @@ function App() {
           <div className='container-buttons'>
             <a href="#discography">
             <Button theme='primary'>EXPLORAR DISCOGRAFIA</Button></a>
-            <a href="#legacy">
+            <a href="#about">
             <Button>CONHEÇA A LENDA</Button></a>
           </div>
           <p className='hero-cta'>role para descobrir</p>

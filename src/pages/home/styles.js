@@ -267,6 +267,7 @@ export const Button = styled.button`
     }
     &:hover{
         opacity: 0.9;
+        transform: scale(1.05);
         color: ${props => props.theme === 'primary' ? Colors.primaryForeground : Colors.primary};
         outline: ${props => props.theme === 'primary' ? 'none' : `1px solid ${Colors.primary}`};
     }
