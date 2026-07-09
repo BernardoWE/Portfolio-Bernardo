@@ -215,7 +215,7 @@ export const Hero = styled.section`
     line-height: 1;
 }
 .container-text h1, .container-text span{
-    font-size: 7rem;
+    font-size: clamp(3rem, 8vw, 6rem);
 }
 .container-text h1 span{
     color: ${Colors.primary};
@@ -607,7 +607,7 @@ export const Legacy = styled.section`
          align-items: center;
          gap: 2em;
          min-height: 70vh;
-         
+         padding-block: 5em;
          /* @media (max-width: 800px){
             grid-template-columns: repeat(2, minmax(250px, 1fr));
         }
@@ -652,7 +652,7 @@ export const Legacy = styled.section`
         width: 100%;
         padding: 2em;
         text-align: center;
-        flex: 1;
+        flex: 1 1 250px;
         p{
             font-family: ${fonts.body};
             color: ${Colors.mutedForeground};
