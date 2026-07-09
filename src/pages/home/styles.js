@@ -168,6 +168,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    list-style: none;
      li a:hover{
     color: ${Colors.primary};
 }
