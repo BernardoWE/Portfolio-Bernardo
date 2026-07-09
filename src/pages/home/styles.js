@@ -243,6 +243,9 @@ p{
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    @media (max-width: 500px){
+        flex-direction: column;
+    }
 }
 `
 
@@ -258,6 +261,10 @@ export const Button = styled.button`
     border-radius: 0.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    /* min-width: 160px; */
+     @media (max-width: 500px){
+        width: 100%;
+    }
     &:hover{
         opacity: 0.9;
         color: ${props => props.theme === 'primary' ? Colors.primaryForeground : Colors.primary};
@@ -615,7 +622,7 @@ export const Legacy = styled.section`
         /* align-items: center; */
         text-align: center;
         /* justify-content: center; */
-        width: 40em;
+        max-width: 40em;
         p{
             font-family: ${fonts.body};
             color: ${Colors.mutedForeground};
@@ -683,7 +690,7 @@ export const Footer = styled.footer`
     display: flex;
     gap: 2rem;
     list-style: none;
-    
+    flex-wrap: wrap;
     }
     a{
         color: ${Colors.mutedForeground};
@@ -708,7 +715,7 @@ export const Footer = styled.footer`
         flex-direction: column;
         gap: 2em;
         text-align: center;
-        width: 28em;
+        max-width: 28em;
         p{
             font-family: ${fonts.body};
             color: ${Colors.mutedForeground};
