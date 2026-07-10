@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgHero from '../../assets/images/herostage.jpg';
+import imgHero from '../../assets/images/mj.jpg';
 import imgConcert from '../../assets/images/concert.png';
 import imgShoes from '../../assets/images/shoes.png';
 export const Colors = {
@@ -177,14 +177,25 @@ a{
 }
 `
 export const Hero = styled.section`
-    background: url(${imgHero}) no-repeat center center;
-    background-size: cover;
+    /* background: url(${imgHero}) no-repeat center center; */
+    /* background-size: cover; */
+    /* position: relative; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+     &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background: url(${imgHero}) center/cover no-repeat;
+    filter: grayscale(100%);
+    z-index: -1;
+  }
 .container-hero{
     display: flex;
     align-items: center;
@@ -600,6 +611,7 @@ export const Moments = styled.section`
 export const Legacy = styled.section`
     /* background-color: ${Colors.sidebarPrimaryForeground}; */
     background-color:oklch(0.146 0.0062 60);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     /* min-height: 70vh; */
     .container-legacy{
          /* margin: 0 auto; */
