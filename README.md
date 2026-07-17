@@ -33,7 +33,7 @@ Uma captura do site em modo mobile ou tablet pode ser colocada aqui para demonst
 
 Confira a versão online do projeto aqui:
 
-- [Demo ao vivo](michael-jackson-alpha.vercel.app)
+- [Demo ao vivo](https://michael-jackson-alpha.vercel.app/)
 
 ## Features
 
