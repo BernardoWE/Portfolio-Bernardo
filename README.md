@@ -25,7 +25,7 @@ Adicione as imagens do projeto na pasta public/images e substitua os exemplos ab
 
 Uma captura do site em modo mobile ou tablet pode ser colocada aqui para demonstrar a experiência responsiva:
 
-![Mobile preview](./src/assets/images/CapturaMobile.png)
+<img src="./src/assets/images/CapturaMobile.png" alt="Mobile preview" width="350" />
 
 ## Features
 
