@@ -1,16 +1,80 @@
-# React + Vite
+# Michael Jackson Tribute
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma landing page responsiva e visualmente impactante em homenagem ao legado de Michael Jackson, desenvolvida com React, Vite e Styled Components.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto foi criado para celebrar a trajetória artística de Michael Jackson por meio de uma experiência visual envolvente, com destaque para:
 
-## React Compiler
+- sua história e impacto cultural
+- sua discografia icônica
+- momentos marcantes da carreira
+- um design moderno e temático
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Screenshots
 
-## Expanding the ESLint configuration
+Adicione as imagens do projeto na pasta public/images e substitua os exemplos abaixo:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Homepage](./src/assets/images/CapturaHomepage.png)
+
+![About section](./src/assets/images/CapturaAbout.png)
+
+![Discography section](./src/assets/images/CapturaDiscography.png)
+
+## Features
+
+- Layout responsivo
+- Navegação entre seções
+- Interface moderna e temática
+- Destaque para álbuns, performances e legado
+- Estrutura organizada para manutenção
+
+## Tech Stack
+
+- React
+- Vite
+- Styled Components
+- JavaScript
+- ESLint
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+```bash
+git clone <url-do-repositorio>
+cd michael-jackson-tribute
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```bash
+src/
+├── assets/
+├── pages/
+│   └── home/
+│       ├── App.jsx
+│       └── styles.js
+```
+
+## Author
+
+Desenvolvido como um tributo visual e artístico ao legado de Michael Jackson.

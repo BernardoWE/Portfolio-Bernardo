@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from '../../assets/react.svg'
-import viteLogo from '../../assets/vite.svg'
-import heroImg from '../../assets/hero.png'
 import gloveImg from '../../assets/images/glove.png'
 import imgConcert from '../../assets/images/concert.png';
 import imgShoes from '../../assets/images/shoes.png';
