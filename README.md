@@ -29,6 +29,12 @@ Uma captura do site em modo mobile ou tablet pode ser colocada aqui para demonst
   <img src="./src/assets/images/CapturaMobile.png" alt="Mobile preview" width="350" />
 </p>
 
+## Demo
+
+Confira a versão online do projeto aqui:
+
+- [Demo ao vivo](michael-jackson-alpha.vercel.app)
+
 ## Features
 
 - Layout responsivo
