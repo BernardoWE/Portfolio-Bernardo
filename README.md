@@ -21,6 +21,12 @@ Adicione as imagens do projeto na pasta public/images e substitua os exemplos ab
 
 ![Discography section](./src/assets/images/CapturaDiscography.png)
 
+### Mobile Preview
+
+Uma captura do site em modo mobile ou tablet pode ser colocada aqui para demonstrar a experiência responsiva:
+
+![Mobile preview](./src/assets/images/CapturaMobile.png)
+
 ## Features
 
 - Layout responsivo
