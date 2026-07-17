@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgHero from '../../assets/images/mj.jpg';
+import imgHero from '../../assets/images/MJ.jpg';
 import imgConcert from '../../assets/images/concert.png';
 import imgShoes from '../../assets/images/shoes.png';
 export const Colors = {
